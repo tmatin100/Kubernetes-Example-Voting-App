@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+ name: result-service
+ labels:
+  name: result-serivce
+  app: demo-voting-app
+spec: 
+  type: LoadBalancer         #(Change the type to LoadBalancer since by defualt it is clusterIP)
+  ports: 
+   - port: 80
+     target: 80
+  selector: 
+    name: result-app-pod              #(links the redis serivce to the label of the result-app pod)
+    app: demo-voting-app 
