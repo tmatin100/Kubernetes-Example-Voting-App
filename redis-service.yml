@@ -1,0 +1,14 @@
+piVersion: v1
+kind: Service
+metadata:
+ name: redis
+ labels:
+   name:readis-serivce
+   app: demo-voting-app
+spec: 
+ ports: 
+  -port: 6379
+   target: 6379
+ selector: 
+   name: redis-pod               #(links the redis serivce to the label of the redis pod)
+   app: demo-voting-app
