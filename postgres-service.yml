@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+ name: db             #(the service name should be based on what the other applicaito is looking for)
+ labels:
+   name:db-serivce
+   app:demo-voting-app
+spec: 
+ ports: 
+ - port:5432
+   target:5432
+ selector: 
+   name: postgres-pod           #(links the postgres service to the label of the postgres pod)
+   app: demo-voting-app
