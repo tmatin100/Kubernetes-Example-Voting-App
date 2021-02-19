@@ -8,7 +8,6 @@ Master Node- responsible for the cluster managment, planing, scheduleing, and mo
 Worker Nodes- Host applications as containers (inside Pods)
 
 ----Master Node componnets------------------------------------------------------------------------------------------------------
-
 1. Etcd Cluster -information is stored in a highly availbe key value store. 
                ETCD is a distrubuted reliable-keyvalue store that is Simple, secure, and fast. 
 
@@ -22,8 +21,7 @@ Worker Nodes- Host applications as containers (inside Pods)
    containers. 
 
 4. A Controller is a process that continously monitors the state of various components within the system 
-    and works towards bringing the whole system the desired functioning state.
-    
+    and works towards bringing the whole system the desired functioning state.    
 4a.-Node-Controller- takes care of nodes, responsible for onboarding new nodes to the cluster, handling situations where
                     nodes become unavailble or gets destroyed. 
 4b.-Replicaiton-Controller- Ensures that desired number of containers are running at all times in a replication group. 
@@ -31,9 +29,7 @@ Worker Nodes- Host applications as containers (inside Pods)
 5. Kube-Scheduler - identifies the right node and places containers based on the container's resource requriements, the worker 
                  node's capacity, or any other policies or contstarints such as taint or tolerations, or  node afinity rules that
                  are on them. 
-
-
-
+                 
 ----Worker Node Componnents--------------------------------------------------------------------------------------------------------
 
 6. Container Runtime Engine- Docker, cotainerd, Rkt etc. needs to be installed on all the nodes, since we use containers for everythig. 
@@ -45,5 +41,3 @@ Worker Nodes- Host applications as containers (inside Pods)
 
 8. Kube-proxy - service that ensures that necesary rules are in place on the worker nodes to allow the containers running on them
                 to reach eachoter. 
-
-
