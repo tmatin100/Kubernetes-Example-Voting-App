@@ -25,6 +25,8 @@ Worker Nodes- Host applications as containers (inside Pods)
 
 4.a.-Node-Controller- takes care of nodes, responsible for onboarding new nodes to the cluster, handling situations where
                     nodes become unavailble or gets destroyed.
+                    
+                    
 4.b.-Replicaiton-Controller- Ensures that desired number of containers are running at all times in a replication group. 
 
 5. Kube-Scheduler - identifies the right node and places containers based on the container's resource requriements, the worker 
