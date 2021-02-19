@@ -28,7 +28,7 @@ Worker Nodes- Host applications as containers (inside Pods)
   -Replicaiton-Controller- Ensures that desired number of containers are running at all times in a replication group. 
 
 
-6. Kube-Scheduler - identifies the right node and places containers based on the containers resource requriements, the worker 
+6. Kube-Scheduler - identifies the right node and places containers based on the container's resource requriements, the worker 
                  node's capacity, or any other policies or contstarints such as taint or tolerations, or  node afinity rules that
                  are on them. 
 
