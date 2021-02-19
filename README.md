@@ -46,3 +46,4 @@ Kubelet(captin)- an agent that runs on each node in a cluster, and listens for t
 Kube-proxy - service that ensures that necesary rules are in place on the worker nodes to allow the containers running on them
              to reach eachoter. 
 
+
