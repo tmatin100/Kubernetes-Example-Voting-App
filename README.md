@@ -5,7 +5,7 @@ deploy as many instances of your application as required, and easily enable comm
 application. 
 
 Master Node- responsible for the cluster managment, planing, scheduleing, and monitioring.         
-Worker Nodes- Host applications as containers 
+Worker Nodes- Host applications as containers (inside Pods)
 
 ----Master Node componnets------------------------------------------------------------------------------------------------------
 
