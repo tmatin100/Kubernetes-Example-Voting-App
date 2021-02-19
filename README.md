@@ -9,26 +9,26 @@ Worker Nodes- Host applications as containers
 
 ----Master Node componnets------------------------------------------------------------------------------------------------------
 
-Etcd Cluster -information is stored in a highly availbe key value store. 
+1.Etcd Cluster -information is stored in a highly availbe key value store. 
                ETCD is a distrubuted reliable-keyvalue store that is Simple, secure, and fast. 
 
-Kube-Apiserver- primariy managment component of kubernetes, responsible for orchestraging all operations within the cluster. It
+2.Kube-Apiserver- primariy managment component of kubernetes, responsible for orchestraging all operations within the cluster. It
                 exposes the kubernetes api which enable external users to perform managmnet operations the cluster as well as the 
                 various controllers to  monitor the state of the cluster and make necessary changes as requreid, and by the worker noeds 
                 to communicate with the server. 
 
-Controller-Manager- The kube conntroller manager manages various components in kubernetes. 
-A controller is a department or office in a master ship that has their own set of responsiblites, such as monitirong and remediating
-containers. 
+3.Controller-Manager- The kube conntroller manager manages various components in kubernetes. 
+  A controller is a department or office in a master ship that has their own set of responsiblites, such as monitirong and remediating
+  containers. 
 
-A Controller is a process that continously monitors the state of various components within the system 
-and works towards bringing the whole system the desired functioning state.
- -Node-Controller- takes are of nodes, responsible for onboarding new nodes to the cluster, handling situations where
+5.A Controller is a process that continously monitors the state of various components within the system 
+   and works towards bringing the whole system the desired functioning state.
+  -Node-Controller- takes are of nodes, responsible for onboarding new nodes to the cluster, handling situations where
                    nodes become unavailble or gets destroyed. 
- -Replicaiton-Controller- Ensures that desired number of containers are running at all times in a replication group. 
+  -Replicaiton-Controller- Ensures that desired number of containers are running at all times in a replication group. 
 
 
-Kube-Scheduler - identifies the right node and places containers based on the containers resource requriements, the worker 
+6.Kube-Scheduler - identifies the right node and places containers based on the containers resource requriements, the worker 
                  node's capacity, or any other policies or contstarints such as taint or tolerations, or  node afinity rules that
                  are on them. 
 
