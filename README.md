@@ -1,1 +1,47 @@
 # Kubernetes-Example-Voting-App
+
+The purpose of kubernetes is to host your applications in the form of containers in an automated fashion so that you can easily 
+deploy as many instances of your application as required, and easily enable communication between diffent services within your 
+application. 
+
+
+Master Node- responsible for the cluster managment, planing, scheduleing, and monitioring. 
+             -
+Worker Nodes- Host applications as containers 
+
+
+
+----Master Node componnets------------------------------------------------------------------------------------------------------
+
+Etcd cluster -information is stored in a highly availbe key value store. 
+               ETCD is a distrubuted reliable-keyvalue store that is Simple, secure, and fast. 
+
+Kube-apiserver- primariy managment component of kubernetes, responsible for orchestraging all operations within the cluster. It
+                exposes the kubernetes api which enable external users to perform managmnet operations the cluster as well as the 
+                various controllers to  monitor the state of the cluster and make necessary changes as requreid, and by the worker noeds 
+                to communicate with the server. 
+
+Controller-Manager-
+ -Node-Controller- takes are of nodes, responsible for onboarding new nodes to the cluster, handling situations where
+                   nodes become unavailble or gets destroyed. 
+ -Replicaiton-Controller- Ensures that desired number of containers are running at all times in a replication group. 
+
+
+kube-scheduler - identifies the right node and places containers based on the containers resource requriements, the worker 
+                node's capacity, or any other policies or contstarints such as taint or tolerations, or  node afinity rules that
+                are on them. 
+
+
+
+----Worker Node Componnents--------------------------------------------------------------------------------------------------------
+
+Container Runtime Engine- Docker, cotainerd, Rkt etc. needs to be installed on all the nodes, since we use containers for everythig. 
+
+
+Kubelet(captin)- an agent that runs on each node in a cluster, and listens for the instructions from the kube-apiserver, an        
+                 deploys or destroys containers on the nodes as requried. The Kube-apiserver eriodicly fetches status 
+                 report from the kubelet, inorder to monitor the status of the nodes and containers on them. 
+
+Kube-proxy - service that ensures that necesary rules are in place on the worker nodes to allow the containers running on them
+             to reach eachoter. 
+
