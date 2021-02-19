@@ -21,13 +21,13 @@ Worker Nodes- Host applications as containers (inside Pods)
    A controller is a componnent in a master that has their own set of responsiblites, such as monitirong and remediating
    containers. 
 
-5. A Controller is a process that continously monitors the state of various components within the system 
+4 . A Controller is a process that continously monitors the state of various components within the system 
    and works towards bringing the whole system the desired functioning state.
   -Node-Controller- takes care of nodes, responsible for onboarding new nodes to the cluster, handling situations where
                     nodes become unavailble or gets destroyed. 
   -Replicaiton-Controller- Ensures that desired number of containers are running at all times in a replication group. 
 
-6. Kube-Scheduler - identifies the right node and places containers based on the container's resource requriements, the worker 
+5. Kube-Scheduler - identifies the right node and places containers based on the container's resource requriements, the worker 
                  node's capacity, or any other policies or contstarints such as taint or tolerations, or  node afinity rules that
                  are on them. 
 
@@ -35,14 +35,14 @@ Worker Nodes- Host applications as containers (inside Pods)
 
 ----Worker Node Componnents--------------------------------------------------------------------------------------------------------
 
-7. Container Runtime Engine- Docker, cotainerd, Rkt etc. needs to be installed on all the nodes, since we use containers for everythig. 
+6. Container Runtime Engine- Docker, cotainerd, Rkt etc. needs to be installed on all the nodes, since we use containers for everythig. 
 
 
-8. Kubelet(captin)- an agent that runs on each node in a cluster, and listens for the instructions from the kube-apiserver, and        
+7. Kubelet(captin)- an agent that runs on each node in a cluster, and listens for the instructions from the kube-apiserver, and        
                  deploys or destroys containers on the nodes as requried. The Kube-apiserver periodicly fetches status 
                  report from the kubelet, in order to monitor the status of the nodes and containers on them. 
 
-9. Kube-proxy - service that ensures that necesary rules are in place on the worker nodes to allow the containers running on them
+8. Kube-proxy - service that ensures that necesary rules are in place on the worker nodes to allow the containers running on them
                 to reach eachoter. 
 
 
