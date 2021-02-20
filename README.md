@@ -1,11 +1,11 @@
 # Kubernetes-Example-Voting-App
 
-The purpose of Kubernetes is to host your applications in the form of containers in an automated fashion so that you can easily 
+The purpose of **Kubernetes** is to host your applications in the form of containers in an automated fashion so that you can easily 
 deploy as many instances of your application as required, and easily enable communication between diffent services within your 
 application. 
 
-Master Node- responsible for the cluster managment, planing, scheduleing, and monitioring.         
-Worker Nodes- Host applications as containers (inside Pods)
+**Master Node**- responsible for the cluster managment, planing, scheduleing, and monitioring.         
+**Worker Nodes**- Host applications as containers (inside Pods)
 
 # ----------Master Node Componnets-----------
 1. **Etcd Cluster** -information is stored in a highly availbe key value store. 
