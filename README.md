@@ -44,4 +44,13 @@ application.
 8. **Kube-proxy** - service that ensures that necesary rules are in place on the worker nodes to allow the containers running on them
                    to reach eachoter. 
 # ---------Client Componnents-----------
-9. **Kubectl**
+9. **Kubectl** - The kubectl command line tool lets you control Kubernetes clusters. For configuration, kubectl looks for a file named config in the $HOME/.kube directory. You can specify other kubeconfig files by setting the KUBECONFIG environment variable or by setting the --kubeconfig flag.
+
+Syntax
+Use the following syntax to run kubectl commands from your terminal window:
+
+kubectl [command] [TYPE] [NAME] [flags]
+
+kubectl get pod pod1
+kubectl get pods pod1
+kubectl get po pod1
