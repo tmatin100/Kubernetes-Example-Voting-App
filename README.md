@@ -46,8 +46,8 @@ application.
 # ---------Client Componnents-----------
 9. **Kubectl** - The kubectl command line tool lets you control Kubernetes clusters. For configuration, kubectl looks for a file named config in the $HOME/.kube directory. You can specify other kubeconfig files by setting the KUBECONFIG environment variable or by setting the --kubeconfig flag.
 
-**Syntax**
-Use the following syntax to run kubectl commands from your terminal window:
+**Syntax
+Use the following syntax to run kubectl commands from your terminal window:**
 
 **kubectl [command] [TYPE] [NAME] [flags]**
 
