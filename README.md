@@ -24,13 +24,13 @@ application.
     and works towards bringing the whole system to the desired functioning state.
   
       4.a. **Node-Controller**- takes care of nodes, responsible for onboarding new nodes to the cluster, handling situations where
-                    nodes become unavailble or gets destroyed.
+                                nodes become unavailble or gets destroyed.
                     
       4.b. **Replicaiton-Controller**- Ensures that desired number of containers are running at all times in a replication group. 
 
 5. **Kube-Scheduler** - identifies the right node and places containers based on the container's resource requriements, the worker 
-                 node's capacity, or any other policies or contstarints such as taint or tolerations, or  node afinity rules that
-                 are on them. 
+                        node's capacity, or any other policies or contstarints such as taint or tolerations, or  node afinity rules that
+                        are on them. 
                  
 # ---------Worker Node Componnents-----------
 
