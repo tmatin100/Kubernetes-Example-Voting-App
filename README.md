@@ -20,14 +20,13 @@ Worker Nodes- Host applications as containers (inside Pods)
    A controller is a componnent in a master that has their own set of responsiblites, such as monitirong and remediating
    containers. 
 
-   4. A **Controller** is a process that continously monitors the state of various components within the system 
+4.  A **Controller** is a process that continously monitors the state of various components within the system 
     and works towards bringing the whole system to the desired functioning state.
-
-   4.a.**Node-Controller**- takes care of nodes, responsible for onboarding new nodes to the cluster, handling situations where
+  
+  4.a.**Node-Controller**- takes care of nodes, responsible for onboarding new nodes to the cluster, handling situations where
                     nodes become unavailble or gets destroyed.
                     
-                    
-4.b.**Replicaiton-Controller**- Ensures that desired number of containers are running at all times in a replication group. 
+  4.b.**Replicaiton-Controller**- Ensures that desired number of containers are running at all times in a replication group. 
 
 5. **Kube-Scheduler** - identifies the right node and places containers based on the container's resource requriements, the worker 
                  node's capacity, or any other policies or contstarints such as taint or tolerations, or  node afinity rules that
