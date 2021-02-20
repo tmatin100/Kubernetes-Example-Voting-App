@@ -51,6 +51,5 @@ Use the following syntax to run kubectl commands from your terminal window:
 
 kubectl [command] [TYPE] [NAME] [flags]
 
-kubectl get pod pod1
 kubectl get pods pod1
-kubectl get po pod1
+
