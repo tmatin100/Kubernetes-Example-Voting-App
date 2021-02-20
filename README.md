@@ -1,7 +1,7 @@
 # Kubernetes-Example-Voting-App
 
 The purpose of **Kubernetes** is to host your applications in the form of containers in an automated fashion so that you can easily 
-deploy as many instances of your application as required, and easily enable communication between diffent services within your 
+deploy as many instances of your application as required, and easily enable communication between different services within your 
 application. 
 
 **Master Node**- responsible for the cluster managment, planing, scheduleing, and monitioring.         
@@ -9,7 +9,7 @@ application.
 
 # ----------Master Node Componnets-----------
 1. **Etcd Cluster** -information is stored in a highly availbe key value store. 
-               ETCD is a distrubuted reliable-keyvalue store that is Simple, secure, and fast. 
+               ETCD is a distrubuted reliable-keyvalue store that is simple, secure, and fast. 
 
 2. **Kube-Apiserver**- primariy managment component of kubernetes, responsible for orchestrating all operations within the cluster. It
                 exposes the kubernetes api which enable external users to perform managmnet operations on the cluster as well as the 
