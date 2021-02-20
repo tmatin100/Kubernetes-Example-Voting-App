@@ -1,5 +1,5 @@
 # Kubernetes-Example-Voting-App
-
+![](images/Voting App Architecture.png)
 The purpose of **Kubernetes** is to host your applications in the form of containers in an automated fashion so that you can easily 
 deploy as many instances of your application as required, and easily enable communication between different services within your 
 application. 
