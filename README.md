@@ -37,9 +37,7 @@ application.
 6. **Container Runtime Engine** - Docker, cotainerd, Rkt etc. needs to be installed on all the nodes, since we use containers for everythig. 
 
 
-7. **Kubelet**(captin)- an agent that runs on each node in a cluster, and listens for the instructions from the kube-apiserver, and        
-                 deploys or destroys containers on the nodes as requried. The Kube-apiserver periodicly fetches status 
-                 report from the kubelet, in order to monitor the status of the nodes and containers on them. 
+7. **Kubelet**(captin)- an agent that runs on each node in a cluster, and listens for the instructions from the kube-apiserver, and deploys or destroys containers on the nodes as requried. The Kube-apiserver periodicly fetches status report from the kubelet, in order to monitor the status of the nodes and containers on them. 
 
 8. **Kube-proxy** - service that ensures that necesary rules are in place on the worker nodes to allow the containers running on them
                    to reach eachoter. 
