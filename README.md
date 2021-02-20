@@ -44,4 +44,4 @@ Worker Nodes- Host applications as containers (inside Pods)
 8. **Kube-proxy** - service that ensures that necesary rules are in place on the worker nodes to allow the containers running on them
                    to reach eachoter. 
 # ---------Client Componnents-----------
-9. **Kubelet**
+9. **Kubectl**
