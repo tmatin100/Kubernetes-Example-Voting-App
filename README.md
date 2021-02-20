@@ -20,10 +20,10 @@ Worker Nodes- Host applications as containers (inside Pods)
    A controller is a componnent in a master that has their own set of responsiblites, such as monitirong and remediating
    containers. 
 
-4. A **Controller** is a process that continously monitors the state of various components within the system 
+   4. A **Controller** is a process that continously monitors the state of various components within the system 
     and works towards bringing the whole system to the desired functioning state.
 
-4.a.**Node-Controller**- takes care of nodes, responsible for onboarding new nodes to the cluster, handling situations where
+   4.a.**Node-Controller**- takes care of nodes, responsible for onboarding new nodes to the cluster, handling situations where
                     nodes become unavailble or gets destroyed.
                     
                     
