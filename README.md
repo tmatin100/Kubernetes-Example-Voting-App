@@ -33,7 +33,7 @@ Worker Nodes- Host applications as containers (inside Pods)
                  node's capacity, or any other policies or contstarints such as taint or tolerations, or  node afinity rules that
                  are on them. 
                  
-# ---------Worker Node Componnents------------
+# ---------Worker Node Componnents-----------
 
 6. Container Runtime Engine- Docker, cotainerd, Rkt etc. needs to be installed on all the nodes, since we use containers for everythig. 
 
