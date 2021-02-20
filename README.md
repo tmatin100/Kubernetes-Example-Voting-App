@@ -21,7 +21,7 @@ Worker Nodes- Host applications as containers (inside Pods)
    containers. 
 
 4. A Controller is a process that continously monitors the state of various components within the system 
-    and works towards bringing the whole system the desired functioning state.
+    and works towards bringing the whole system to the desired functioning state.
 
 4.a.-Node-Controller- takes care of nodes, responsible for onboarding new nodes to the cluster, handling situations where
                     nodes become unavailble or gets destroyed.
