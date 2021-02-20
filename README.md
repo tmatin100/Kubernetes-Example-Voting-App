@@ -7,7 +7,7 @@ application.
 Master Node- responsible for the cluster managment, planing, scheduleing, and monitioring.         
 Worker Nodes- Host applications as containers (inside Pods)
 
-# ---------------Master Node componnets-----------------------
+# ---------------Master Node Componnets-----------------------
 1. Etcd Cluster -information is stored in a highly availbe key value store. 
                ETCD is a distrubuted reliable-keyvalue store that is Simple, secure, and fast. 
 
