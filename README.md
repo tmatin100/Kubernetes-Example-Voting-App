@@ -53,3 +53,5 @@ Use the following syntax to run kubectl commands from your terminal window:**
 
 **kubectl get pods pod1**
 
+Refer to the document for more details: 
+https://kubernetes.io/docs/reference/kubectl/overview/
