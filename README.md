@@ -7,6 +7,9 @@ application.
 **Master Node**- responsible for the cluster managment, planing, scheduleing, and monitioring.         
 **Worker Nodes**- Host applications as containers (inside Pods)
 
+![](images/Kubernetes Architecutre.JPG.png)
+
+
 # ----------Master Node Componnets-----------
 1. **Etcd Cluster** -information is stored in a highly availbe key value store. 
                ETCD is a distrubuted reliable-keyvalue store that is simple, secure, and fast. 
