@@ -7,7 +7,7 @@ application.
 **Master Node**- responsible for the cluster managment, planing, scheduleing, and monitioring.         
 **Worker Nodes**- Host applications as containers (inside Pods)
 
-![](images/Kubernetes Architecutre.JPG.png)
+![](images/Kubernetes-Architecutre.JPG.png)
 
 
 # ----------Master Node Componnets-----------
